@@ -7,8 +7,8 @@ import {
   CardAction,
   CardDescription,
   CardContent,
-} from './card';
-import { Button } from './button';
+} from '../src/components/ui/card';
+import { Button } from '../src/components/ui/button';
 import type { ComponentProps } from 'react';
 
 // Custom Storybook args type

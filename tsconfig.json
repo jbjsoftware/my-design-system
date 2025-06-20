@@ -1,5 +1,13 @@
 {
   "extends": "./tsconfig.base.json",
+  "compilerOptions": {
+    "baseUrl": ".",
+    "paths": {
+      "@my-org/ui": ["libs/ui/src/index.ts"],
+      "@my-org/ui/*": ["libs/ui/src/*"],
+      "@/*": ["libs/ui/src/*"]
+    }
+  },
   "compileOnSave": false,  
   "files": [],
   "references": [    

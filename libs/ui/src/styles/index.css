@@ -309,8 +309,6 @@
   --shadow-2xl: var(--shadow-2xl);
 }
 
-
-
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);

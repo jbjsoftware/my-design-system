@@ -24,7 +24,7 @@
     "src/**/*.stories.mdx",
     ".storybook/*.js",
     ".storybook/*.ts"
-  ],
+, "stories/button.stories.tsx", "stories/card.stories.tsx"  ],
   "references": [
     {
       "path": "./tsconfig.lib.json"
