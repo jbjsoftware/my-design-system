@@ -1,13 +1,20 @@
 {
   "extends": "./tsconfig.base.json",
-  "compileOnSave": false,
+  "compileOnSave": false,  
   "files": [],
-  "references": [
-    {
-      "path": "./apps/demo-e2e"
-    },
+  "references": [    
     {
       "path": "./apps/demo"
+    },
+    {
+      "path": "./libs/ui"
+    },    
+  ],
+  "ts-node": {
+    "compilerOptions": {
+      "module": "commonjs",
+      "moduleResolution": "node10",
+      "customConditions": null
     }
-  ]
+  }
 }
