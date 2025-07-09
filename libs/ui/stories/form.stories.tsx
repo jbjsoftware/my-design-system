@@ -285,30 +285,74 @@ export const SettingsFormExample: Story = {
   render: () => <SettingsForm />,
 };
 
+const simpleFormSchema = z.object({
+  email: z.string().email('Please enter a valid email address.'),
+  password: z.string().min(8, 'Password must be at least 8 characters long.'),
+});
+
+type SimpleFormValues = z.infer<typeof simpleFormSchema>;
+
+const SimpleForm = () => {
+  const form = useForm<SimpleFormValues>({
+    resolver: zodResolver(simpleFormSchema),
+    defaultValues: {
+      email: '',
+      password: '',
+    },
+  });
+
+  const onSubmit = (data: SimpleFormValues) => {
+    console.log(data);
+    alert('Form submitted! Check console for data.');
+  };
+
+  return (
+    <Form {...form}>
+      <form onSubmit={form.handleSubmit(onSubmit)} className="space-y-4">
+        <FormField
+          control={form.control}
+          name="email"
+          render={({ field }) => (
+            <FormItem>
+              <FormLabel>Email</FormLabel>
+              <FormControl>
+                <Input type="email" placeholder="Enter your email" {...field} />
+              </FormControl>
+              <FormDescription>
+                We'll never share your email with anyone else.
+              </FormDescription>
+              <FormMessage />
+            </FormItem>
+          )}
+        />
+
+        <FormField
+          control={form.control}
+          name="password"
+          render={({ field }) => (
+            <FormItem>
+              <FormLabel>Password</FormLabel>
+              <FormControl>
+                <Input
+                  type="password"
+                  placeholder="Enter your password"
+                  {...field}
+                />
+              </FormControl>
+              <FormDescription>
+                Must be at least 8 characters long.
+              </FormDescription>
+              <FormMessage />
+            </FormItem>
+          )}
+        />
+
+        <Button type="submit">Submit</Button>
+      </form>
+    </Form>
+  );
+};
+
 export const Default: Story = {
-  render: () => (
-    <div className="space-y-4">
-      <FormItem>
-        <FormLabel>Email</FormLabel>
-        <FormControl>
-          <Input type="email" placeholder="Enter your email" />
-        </FormControl>
-        <FormDescription>
-          We'll never share your email with anyone else.
-        </FormDescription>
-        <FormMessage />
-      </FormItem>
-
-      <FormItem>
-        <FormLabel>Password</FormLabel>
-        <FormControl>
-          <Input type="password" placeholder="Enter your password" />
-        </FormControl>
-        <FormDescription>Must be at least 8 characters long.</FormDescription>
-        <FormMessage />
-      </FormItem>
-
-      <Button>Submit</Button>
-    </div>
-  ),
+  render: () => <SimpleForm />,
 };
