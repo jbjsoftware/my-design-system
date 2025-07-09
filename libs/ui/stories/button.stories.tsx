@@ -1,6 +1,6 @@
 import { Meta, StoryObj } from '@storybook/react-vite';
 import { Button } from '../src/components/ui/button';
-import { expect } from 'storybook/test';
+import { StarIcon } from 'lucide-react';
 
 const meta: Meta<typeof Button> = {
   component: Button,
@@ -79,9 +79,7 @@ export const Sizes: Story = {
         Large
       </Button>
       <Button {...args} size="icon" aria-label="icon">
-        <span role="img" aria-label="star">
-          ⭐️
-        </span>
+        <StarIcon />
       </Button>
     </div>
   ),
@@ -102,12 +100,5 @@ export const AsChild: Story = {
   args: {
     asChild: true,
     children: <a href="#">Button as Link (asChild)</a>,
-  },
-};
-
-export const Heading: Story = {
-  args: {},
-  play: async ({ canvas }) => {
-    await expect(canvas.getByText(/Welcome to Button!/gi)).toBeTruthy();
   },
 };

@@ -10,6 +10,7 @@ export * from './components/ui/sheet';
 export * from './components/ui/skeleton';
 export * from './components/ui/tooltip';
 export * from './components/ui/separator';
+export * from './components/ui/checkbox';
 // export * from './components/ui/dropdown-menu';
 // export * from './components/ui/popover';
 // export * from './components/ui/dialog';
