@@ -1,0 +1,166 @@
+/* Light theme for docs */
+html.light .sb-show-main,
+html.light .docs-story,
+html.light .sb-main-padded,
+html.light .sbdocs-wrapper,
+html.light .sbdocs-content {
+  background-color: #ffffff !important;
+  color: #333333 !important;
+}
+
+ [role="switch"] {
+  background-color: transparent !important;
+  color: inherit !important;
+  border-color: inherit !important;
+}
+
+html.light .sbdocs-h1,
+html.light .sbdocs-h2,
+html.light .sbdocs-h3,
+html.light .sbdocs-h4,
+html.light .sbdocs-h5,
+html.light .sbdocs-h6 {
+  color: #333333 !important;
+}
+
+html.light .sbdocs-p {
+  color: #666666 !important;
+}
+
+html.light .sbdocs-preview {
+  background-color: #f8f9fa !important;
+  border: 1px solid #e9ecef !important;
+}
+
+html.light .sbdocs-source {
+  background-color: #f8f9fa !important;
+  border: 1px solid #e9ecef !important;
+}
+
+/* Controls panel and toolbar */
+html.light .docblock-argstable,
+html.light .docblock-argstable-head,
+html.light .docblock-argstable-body,
+html.light .docblock-argstable tr,
+html.light .docblock-argstable td,
+html.light .docblock-argstable th {
+  background-color: #ffffff !important;
+  color: #333333 !important;
+  border-color: #e9ecef !important;
+}
+
+html.light .sb-bar,
+html.light .sb-bar-item,
+html.light [data-side="bottom"] {
+  background-color: #ffffff !important;
+  color: #333333 !important;
+  border-color: #e9ecef !important;
+}
+
+/* Control inputs and fields */
+html.light [data-side="bottom"] input,
+html.light [data-side="bottom"] select,
+html.light [data-side="bottom"] textarea,
+html.light .docblock-argstable input,
+html.light .docblock-argstable select,
+html.light .docblock-argstable textarea {
+  /* background-color: #ffffff ; */
+  color: #333333 ;
+  border-color: #e9ecef ;
+}
+
+/* Boolean control labels */
+html.light [data-side="bottom"] label,
+html.light [data-side="bottom"] span,
+html.light .docblock-argstable label,
+html.light .docblock-argstable span
+{
+  color: #333333 ;
+  /* background-color: #ffffff; */
+}
+
+/* Dark theme for docs */
+html.dark .sb-show-main,
+html.dark .docs-story,
+html.dark .sb-main-padded,
+html.dark .sbdocs-wrapper,
+html.dark .sbdocs-content {
+  background-color: #1a1a1a !important;
+  color: #ffffff !important;
+}
+
+html.dark .sbdocs-h1,
+html.dark .sbdocs-h2,
+html.dark .sbdocs-h3,
+html.dark .sbdocs-h4,
+html.dark .sbdocs-h5,
+html.dark .sbdocs-h6,
+html.dark h1,
+html.dark h2,
+html.dark h3,
+html.dark h4,
+html.dark h5,
+html.dark h6 {
+  color: #ffffff !important;
+}
+
+html.dark .sbdocs-p {
+  color: #cccccc !important;
+}
+
+html.dark .sbdocs-preview {
+  background-color: #2d2d2d !important;
+  border: 1px solid #404040 !important;
+}
+
+html.dark .sbdocs-source {
+  background-color: #2d2d2d !important;
+  border: 1px solid #404040 !important;
+}
+
+/* Controls panel and toolbar */
+html.dark .docblock-argstable,
+html.dark .docblock-argstable-head,
+html.dark .docblock-argstable-body,
+html.dark .docblock-argstable tr,
+html.dark .docblock-argstable td,
+html.dark .docblock-argstable th {
+  background-color: #1a1a1a !important;
+  color: #ffffff !important;
+  border-color: #404040 !important;
+}
+
+html.dark .sb-bar,
+html.dark .sb-bar-item,
+html.dark [data-side="bottom"] {
+  background-color: #1a1a1a !important;
+  color: #ffffff !important;
+  border-color: #404040 !important;
+}
+
+/* Control inputs and fields */
+html.dark [data-side="bottom"] input,
+html.dark [data-side="bottom"] select,
+html.dark [data-side="bottom"] textarea,
+html.dark .docblock-argstable input,
+html.dark .docblock-argstable select,
+html.dark .docblock-argstable textarea {
+  background-color: #2d2d2d;
+  color: #ffffff !important;
+  border-color: #404040 !important;
+}
+
+/* Boolean control labels */
+html.dark [data-side="bottom"] label,
+html.dark [data-side="bottom"] span,
+html.dark .docblock-argstable label,
+html.dark .docblock-argstable span
+ {
+  color: #ffffff;
+  background-color: #2d2d2d;
+}
+
+html.dark :where(p:not(.sb-anchor, .sb-unstyled, .sb-unstyled p)),
+html.dark :where(li:not(.sb-anchor, .sb-unstyled, .sb-unstyled li)){
+  color: #ffffff;
+}

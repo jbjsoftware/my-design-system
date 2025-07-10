@@ -4,7 +4,7 @@
     "outDir": "out-tsc/storybook",
     "module": "esnext",
     "moduleResolution": "bundler",
-    "jsx": "preserve"
+    "jsx": "react-jsx"
   },
   "exclude": [
     "src/**/*.spec.ts",
@@ -24,7 +24,7 @@
     "src/**/*.stories.mdx",
     ".storybook/*.js",
     ".storybook/*.ts"
-, "stories/button.stories.tsx", "stories/card.stories.tsx"  ],
+, "stories/button.stories.tsx", "stories/card.stories.tsx", ".storybook/preview.tsx"  ],
   "references": [
     {
       "path": "./tsconfig.lib.json"

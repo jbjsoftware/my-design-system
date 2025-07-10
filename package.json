@@ -29,7 +29,10 @@
     "@nx/workspace": "21.2.1",
     "@playwright/test": "^1.36.0",
     "@radix-ui/react-slot": "^1.2.3",
+    "@storybook/addon-a11y": "^9.0.16",
+    "@storybook/addon-docs": "^9.0.16",
     "@storybook/addon-themes": "^9.0.12",
+    "@storybook/addon-vitest": "^9.0.16",
     "@storybook/react-vite": "9.0.12",
     "@swc-node/register": "~1.9.1",
     "@swc/cli": "~0.6.0",
@@ -58,7 +61,7 @@
     "jsdom": "~22.1.0",
     "lucide-react": "^0.518.0",
     "nx": "21.2.1",
-    "prettier": "^2.6.2",
+    "prettier": "^2.6.2",    
     "storybook": "9.0.12",
     "tailwind-merge": "^3.3.1",
     "tailwindcss": "^4.1.10",
@@ -71,7 +74,7 @@
     "vite": "^6.0.0",
     "vite-plugin-dts": "~4.5.0",
     "vitest": "^3.0.0"
-  }, 
+  },
   "nx": {
     "includedScripts": [],
     "targets": {
