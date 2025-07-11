@@ -4,7 +4,7 @@ html.light .docs-story,
 html.light .sb-main-padded,
 html.light .sbdocs-wrapper,
 html.light .sbdocs-content {
-  background-color: #ffffff !important;
+  background-color: var(--color-background) !important;
   color: #333333 !important;
 }
 
@@ -28,7 +28,7 @@ html.light .sbdocs-p {
 }
 
 html.light .sbdocs-preview {
-  background-color: #f8f9fa !important;
+  background-color: var(--color-background) !important;
   border: 1px solid #e9ecef !important;
 }
 
@@ -85,8 +85,8 @@ html.dark .docs-story,
 html.dark .sb-main-padded,
 html.dark .sbdocs-wrapper,
 html.dark .sbdocs-content {
-  background-color: #1a1a1a !important;
-  color: #ffffff !important;
+  background-color: var(--color-background) !important;
+  color: var(--color-foreground) !important;
 }
 
 html.dark .sbdocs-h1,
